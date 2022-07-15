@@ -14,7 +14,7 @@
 ?>
 <script>
   $(document).ready(function(){
-    $('.thumbnail-catimage, .thumbnail-productsimage, .categories_view_data img').each(function () {
+    $('.thumbnail-catimage, .thumbnail-productsimage, .categories_view_data img, .infoBoxContent div img').each(function () {
       var curSrc = $(this).attr('src');
       $(this).attr('src', curSrc + '?t=<?php echo time();?>');
     });
